@@ -36,7 +36,7 @@ bash
 python governance_score.py examples/aws_trace_failure.json
 Example output:
 
-text
+
 📊 AI Agent Governance Score Report
 ===================================
 Continuity Score:         16.67 / 100
@@ -59,7 +59,7 @@ rollback_viable	boolean	True if the action could still be reversed at commit tim
 hidden_commitment	boolean	True if a retry or continuation was attempted without re‑authorisation.
 Optional fields (e.g., step_name, timestamp) may be present for human readability.
 
-#Scoring Formula
+*Scoring Formula
 
 Let N = number of steps.
 
