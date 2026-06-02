@@ -59,7 +59,7 @@ rollback_viable	boolean	True if the action could still be reversed at commit tim
 hidden_commitment	boolean	True if a retry or continuation was attempted without re‑authorisation.
 Optional fields (e.g., step_name, timestamp) may be present for human readability.
 
-Scoring Formula
+#Scoring Formula
 
 Let N = number of steps.
 
@@ -70,26 +70,21 @@ Governance Score = 0.4 × Continuity Score + 0.3 × Evidence Freshness Score + 0
 
 Interpretation
 
-Score Range	Interpretation
+**Score Range	Interpretation
 90–100	Excellent – highly governable
 70–89	Good – acceptable governance
 50–69	Warning – risk of silent failure
 <50	Critical – high risk of undetected drift
 Examples
 
-The examples/ folder contains real execution traces from a live AWS run:
+#The examples/ folder contains real execution traces from a live AWS run:
 
 aws_trace_failure.json – trace where continuity collapsed and rollback failed (Warning score)
 aws_trace_success.json – fully admissible trace (Excellent score)
 survivability_trace.json – degradation from FULL to DENIED
 Contributing
 
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
-The original repository remains protected – only the owner (a1k7) can merge changes. This ensures the integrity of the reference implementation.
-
-See CONTRIBUTING.md for guidelines (if you add that file later).
-
-License
+#License
 
 MIT – free for any use, commercial or otherwise. See LICENSE for details.
 
