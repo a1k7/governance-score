@@ -1,0 +1,44 @@
+[
+  {
+    "step_name": "authorize",
+    "continuity_valid": true,
+    "evidence_fresh": true,
+    "rollback_viable": true,
+    "hidden_commitment": false
+  },
+  {
+    "step_name": "memory_read",
+    "continuity_valid": false,
+    "evidence_fresh": true,
+    "rollback_viable": true,
+    "hidden_commitment": false
+  },
+  {
+    "step_name": "tool_call",
+    "continuity_valid": false,
+    "evidence_fresh": true,
+    "rollback_viable": true,
+    "hidden_commitment": false
+  },
+  {
+    "step_name": "policy_mutation",
+    "continuity_valid": false,
+    "evidence_fresh": true,
+    "rollback_viable": true,
+    "hidden_commitment": false
+  },
+  {
+    "step_name": "retry",
+    "continuity_valid": false,
+    "evidence_fresh": true,
+    "rollback_viable": true,
+    "hidden_commitment": true
+  },
+  {
+    "step_name": "final_execute",
+    "continuity_valid": false,
+    "evidence_fresh": false,
+    "rollback_viable": false,
+    "hidden_commitment": true
+  }
+]
